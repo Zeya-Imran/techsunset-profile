@@ -1,20 +1,21 @@
 import Image from "next/image";
 const projectData = [
-  { name: "Sapna Online", date: "Nov 2021 - Apr 2022" },
-  { name: "Roylace", date: "May 2022 - Sep 2022" },
-  { name: "Events Management", date: "Oct 2022 - Mar 2023" },
-  { name: "Bharat Taxi", date: "Apr 2023 - Oct 2023" },
-  { name: "Pothys", date: "Nov 2023 - Mar 2024" },
-  { name: "Groovy Cabs", date: "Apr 2024 - Aug 2024" },
+  { name: "Team Management website", date: "Apr 2024 - Aug 2024" },
+  { name: "Green Lane", date: "Oct 2023 - Mar 2024" },
+  { name: "Inter Miles", date: "Jan 2023 - Aug 2023" },
+  { name: "Franchise Direct", date: "Sep 2022 - Jan 2023" },
+  { name: "Trip More", date: "Feb 2022 - Sep 2022" },
+  { name: "Boxed Green", date: "Aug 2021 - Dec 2021" },
+  { name: "Sports Uncle", date: "Mar 2021 - Jul 2021" },
 ];
 
 const Resume = () => {
   return (
     <div
-      className="w-10/12 bg-[#e1f8fe] rounded-2xl mx-auto mt-10 py-10 p-1"
+      className="w-10/12 bg-[#e1f8fe] rounded-2xl mx-auto mt-10 mb-10 py-10 p-1"
       id="resume"
     >
-      <h1 className="text-center mb-10 text-4xl montserrat-medium">
+      <h1 className="text-center mb-10 text-4xl montserrat-medium tracking-wide">
         My Detailed Information.
       </h1>
       <div className="max-w-5xl mx-auto rounded-lg px-16 py-10 shadow-lg border-[12px] border-[#2563eb]">

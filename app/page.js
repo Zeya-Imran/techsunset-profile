@@ -3,15 +3,15 @@ import Home from "./components/Home";
 import Projects from "./components/projectjs";
 import Resume from "./components/Resume";
 
-const HomeRoute = () => {
+const maintRoute = () => {
   return (
     <>
-      <Home />
-      <Projects />
       <Resume />
+      <Projects />
+      <Home />
       <Contact />
     </>
   );
 };
 
-export default HomeRoute;
+export default maintRoute;

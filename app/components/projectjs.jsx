@@ -58,7 +58,7 @@ const projects = [
 const Projects = () => {
   return (
     <section
-      className="w-10/12 pt-10 mx-auto bg-gray-50 rounded-xl"
+      className="w-10/12 pt-10 mx-auto bg-gray-50 rounded-xl mb-10"
       id="project"
     >
       <h1 className="text-center mb-10 text-4xl montserrat-medium">

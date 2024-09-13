@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-10 items-center py-10">
-      <div className="w-10/12 grid grid-cols-2 gap-8">
-        <div className="rounded-2xl bg-[#e1f8fe] px-16 py-8 space-y-6">
+    <div className="flex flex-col gap-10 items-center py-10" id="about">
+      <div className="w-10/12 grid md:grid-cols-2 grid-cols-1 gap-8">
+        <div className="rounded-2xl bg-[#e1f8fe] md:px-16 px-8 py-8 space-y-6">
           <div>
             <h1 className="text-4xl ">
               I am{" "}
@@ -35,17 +35,18 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="rounded-2xl bg-[#ffd640]  px-16 py-8 space-y-6 relative">
+        <div className="rounded-2xl bg-[#ffd640]  px-16 py-8 space-y-6 relative h-[430px]">
           <Image
             src="/model2.png"
             alt="model"
-            width={220}
+            width={230}
             height={0}
             className="absolute bottom-0 left-[30%]"
           />
         </div>
       </div>
 
+      {/* skill icon list */}
       <div className="flex gap-10">
         <Image src="/javascript.png" alt="react" width={90} height={90} />
         <Image src="/react.png" alt="react" width={90} height={90} />

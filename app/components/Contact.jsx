@@ -43,7 +43,7 @@ const Contact = () => {
         </div>
 
         {/* Right section - Contact Form */}
-        <div className="w-1/2 p-16 bg-[#ffd640] border ">
+        <div className="w-1/2 p-16 bg-[#ffffff] border ">
           <form>
             <div className="grid grid-cols-2 gap-4 mb-4">
               <input
