@@ -2,26 +2,342 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+h2{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+small{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+
+
+.nothing-regular {
+  font-family: "Nothing You Could Do";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.palanquin-thin {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .palanquin-extralight {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .palanquin-light {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .palanquin-regular {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .palanquin-medium {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .palanquin-semibold {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .palanquin-bold {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+ /* Montserrat Normal Weights */
+.montserrat-thin {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.montserrat-extralight {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.montserrat-light {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.montserrat-regular {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-medium {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.montserrat-semibold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.montserrat-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.montserrat-extrabold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.montserrat-black {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Montserrat Italic Weights */
+.montserrat-thin-italic {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.montserrat-extralight-italic {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.montserrat-light-italic {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.montserrat-italic {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.montserrat-medium-italic {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.montserrat-semibold-italic {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.montserrat-bold-italic {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.montserrat-extrabold-italic {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.montserrat-black-italic {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.projects-box {
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+    height: 350px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  
+  .projects-box img {
+    width: 100%;
+    transition: all 2s ease-in-out; 
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+
+  }
+  
+  .projects-box:hover img {
+    object-position: bottom;
+    transform: scale(1.2);
+  }
+ 
+  .projects-box-wraper:hover h1{
+    color: rgb(255, 193, 7);
+    transition: .3s all ease-in;
+  }
+
+  .projects-box-wraper:hover p{
+    color: rgb(255, 193, 7,0.7);
+    transition: .4s all ease-in;
+  }
+
+  /* .projects-box-wraper:hover a{
+    color: rgb(255, 193, 7)/80;
+  } */
+  .projects-box-wraper:hover{
+    background: linear-gradient(120deg, rgba(15, 15, 15, 0.98) 0%, rgba(43, 43, 53, .98)); 
+  }
+
+
+.bento-grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 480px;
+}
+
+@media(max-width:1024px) {
+  .bento-grid {
+      grid-template-rows: repeat(8, 1fr);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media(max-width:768px) {
+  .bento-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      height: auto;
   }
 }
+
+.bento-item {
+  padding: 30px;
+  background-color: #2b2b38;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-item img {
+  filter: grayscale(.5);
+  transition: ease 1s all;
+  background-color: transparent;
+  opacity: .5;
+}
+
+.bento-item:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+@media(max-width:768px) {
+  .bento-item {
+      height: auto;
+  }
+}
+
+.bento-item:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+@media(max-width:1024px) {
+  .bento-item:nth-child(1) {
+      grid-column: span 2;
+      grid-row: span 2;
+  }
+}
+
+.bento-item:nth-child(2) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+@media(max-width:1024px) {
+  .bento-item:nth-child(2) {
+      grid-column: span 3;
+      grid-row: span 2;
+  }
+}
+
+.bento-item:nth-child(3) {
+  grid-column: span 1;
+  grid-row: span 1;
+  padding: 30px 20px !important;
+}
+
+@media(max-width:1024px) {
+  .bento-item:nth-child(3) {
+      grid-column: span 3;
+      grid-row: span 2;
+  }
+}
+
+.bento-item:nth-child(4) {
+  grid-column: span 1;
+  grid-row: span 1;
+  padding: 30px 20px !important;
+}
+
+@media(max-width:1024px) {
+  .bento-item:nth-child(4) {
+      grid-column: span 2;
+      grid-row: span 4;
+  }
+}
+
+.bento-item:nth-child(5) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+@media(max-width:1024px) {
+  .bento-item:nth-child(5) {
+      grid-column: span 3;
+      grid-row: span 2;
+  }
+}
+
+.bento-item:nth-child(6) {
+  grid-column: span 5;
+  grid-row: span 3;
+}
+
+@media(max-width:1024px) {
+  .bento-item:nth-child(6) {
+      grid-column: span 5;
+      grid-row: span 2;
+  }
+}
+
